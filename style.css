@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'ubuntu',sans-serif;
+}
+
+a{
+color:white;
+text-decoration:none;
+}
+
+body{
+background:linear-gradient(to right,#01022d,#000);
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+height:700px;
+background:
+linear-gradient(to right,#01022de5 30%,#00000088),
+url(avatar.jpg);
+background-size:cover;
+background-position:center;
+border-radius:10px;
+padding:20px;
+}
+
+.container:hover{
+background:
+linear-gradient(to right,#01022de5 30%,transparent),
+url(avatar.jpg);
+background-size:cover;
+}
+
+/* header */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:32px;
+font-weight:bold;
+text-transform:uppercase;
+color:white;
+}
+
+.navbar{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+.navbar a{
+border-bottom:2px solid transparent;
+padding-bottom:3px;
+}
+
+.navbar a:hover{
+border-bottom:2px solid white;
+}
+
+/* menu icon */
+
+#menu-icon{
+font-size:35px;
+color:white;
+display:none;
+cursor:pointer;
+}
+
+/* content */
+
+.ava{
+color:white;
+margin-top:60px;
+width:50%;
+}
+
+.ava h2{
+font-size:100px;
+text-transform:uppercase;
+}
+
+.ava p{
+margin:20px 0;
+line-height:1.6;
+max-width:400px;
+}
+
+.ava button{
+font-size:25px;
+padding:8px 18px;
+border-radius:10px;
+border:2px solid transparent;
+cursor:pointer;
+transition:.4s;
+}
+
+.ava button:hover{
+background:transparent;
+border:2px solid white;
+color:white;
+}
+
+
+/* Tablet */
+
+@media (max-width:900px){
+
+.ava h2{
+font-size:70px;
+}
+
+.ava{
+width:70%;
+}
+
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+#menu-icon{
+display:block;
+}
+
+.navbar{
+position:absolute;
+top:80px;
+right:20px;
+background:#000000d9;
+flex-direction:column;
+width:200px;
+padding:20px;
+display:none;
+border-radius:10px;
+}
+
+.navbar.active{
+display:flex;
+}
+
+.container{
+height:auto;
+}
+
+.ava{
+width:100%;
+text-align:center;
+}
+
+.ava h2{
+font-size:50px;
+}
+
+.ava p{
+max-width:100%;
+}
+
+}
+
+/* small mobile */
+
+@media (max-width:480px){
+
+.ava h2{
+font-size:35px;
+}
+
+.ava button{
+font-size:18px;
+}
+
+}

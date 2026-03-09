@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AVATAR</title>
+
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<div class="logo">avatar</div>
+
+<i class='bx bx-menu' id="menu-icon"></i>
+
+<ul class="navbar">
+
+<li><a class="active" href="#">HOME</a></li>
+<li><a href="https://dai.ly/x9bro2w" target="_blank">WATCH FILM</a></li>
+<li><a href="#">PROMO</a></li>
+<li><a href="AVATAR.png" target="_blank">PHOTO</a></li>
+
+</ul>
+
+</header>
+
+
+<div class="ava">
+
+<h2>Avatar</h2>
+
+<p>
+Avatar is a 2009 epic science fiction film co-produced, co-edited, written, and directed by James Cameron. 
+</p>
+
+<a href="https://en.wikipedia.org/wiki/Avatar_(2009_film)" target="_blank">
+<button>Click Here</button>
+</a>
+
+</div>
+
+</div>
+
+<script>
+
+let menu = document.querySelector("#menu-icon");
+let navbar = document.querySelector(".navbar");
+
+menu.onclick = () => {
+navbar.classList.toggle("active");
+}
+
+</script>
+
+</body>
+</html>
